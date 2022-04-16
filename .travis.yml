@@ -1,0 +1,9 @@
+
+jdk:
+  - openjdk8
+
+script:
+  - mvn clean
+  - mvn evosuite:generate
+  - mvn evosuite:export
+  - mvn test
