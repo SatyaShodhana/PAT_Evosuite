@@ -1,4 +1,3 @@
-
 jdk:
   - openjdk8
 
@@ -7,3 +6,4 @@ script:
   - mvn evosuite:generate
   - mvn evosuite:export
   - mvn test
+  - mvn jacoco:report coveralls:report
